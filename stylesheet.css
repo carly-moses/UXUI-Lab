@@ -1,0 +1,136 @@
+body {
+    background-color: #f0bbb7; 
+    color: #111111; 
+    font-family: 'Inconsolata', monospace;
+}
+
+nav {
+    display: flex; 
+    justify-content: center; 
+    margin-bottom: 20px; 
+}
+
+.top {
+    display: inline-block; 
+    list-style-type: none;
+    margin: 5px; 
+}
+
+a {
+    text-decoration: none; 
+    color: #fcfcfc; 
+    border: 2px solid #402125; 
+    border-radius: 30px; 
+    padding: 5px 10px; 
+    margin: 5px;
+    background-color: #7f2a4d;
+    font-size: 10px; 
+}
+
+h1 {
+    margin: 10px; 
+}
+
+h1, h2, h3 {
+    color: #7f2a4d;
+    font-family: 'Titan One', cursive; 
+    font-size: 20px;  
+}
+
+
+.intro {
+    border: 5px solid #cf4d6f; 
+    margin: 20px; 
+    text-align: center; 
+    padding: 10px; 
+}
+
+.carousel {
+    display: flex;
+    justify-content: center; 
+    background-color: #7f2a4d; 
+}
+
+.carousel-item {
+    height: 400px;
+    width: 300px;
+}
+
+h2, .facts, .firstimages {
+    display: none; 
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+.header {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    width: 100%;
+}
+
+h1 {
+    width: 50%;
+    font-size: 50px;
+    margin: 20px;  
+}
+
+.top {
+    margin-top: 50px; 
+}
+
+a {
+    font-size: 20px; 
+}
+
+.carousel-item {
+    height: 500px;
+    width: 500px;
+    align-content: center;
+}
+
+.intro-and-facts {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px; 
+}
+
+.intro {
+    height: 250px; 
+    width: 50%;   
+    margin: 0 20px; 
+}
+
+.facts {
+    border: 5px solid #cf4d6f; 
+    height: 250px; 
+    width: 50%;  
+    display: block;  
+    margin-bottom: 0; 
+    padding: 10px 30px; 
+}
+
+h2 {
+    display: block;
+    text-align: center; 
+    font-size: 40px; 
+}
+.firstimages {
+    display: block; 
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px; 
+}
+
+.first1, .first2, .first3, .first4 {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;   
+    border: 5px solid #d9d3d3; 
+}
+
+.first2, .first3 {
+    transform: rotate(90deg);
+}
+}
